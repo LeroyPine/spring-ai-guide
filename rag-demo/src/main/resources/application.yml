@@ -1,0 +1,22 @@
+spring:
+  ai:
+    dashscope:
+      api-key: ${ali.api.key}  # 替换为你的 Key
+      chat:
+        options:
+          model: qwen-plus  # 千问语言模型
+      embedding:
+        options:
+          model: text-embedding-v3  # 千问文本向量
+
+
+server:
+  servlet:
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
+
+logging:
+  level:
+    org.springframework.ai: DEBUG
